@@ -39,7 +39,7 @@ const App = () => {
         <div id="wrapper" >
           <div className="quote-text">{quote}</div>
           <div className="quote-author">{author}</div>
-          <button id="new-quote" onClick={getAuthorQuote}>Fetch</button>
+          <button className="button" id="new-quote" onClick={getAuthorQuote}>Fetch</button>
         </div>
       </div>
     );
