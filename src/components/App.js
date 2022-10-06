@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/App.css";
 
 var colors = [
@@ -30,6 +30,9 @@ const App = () => {
     console.log(data)
     console.log(background)
   }
+  useEffect(()=>{
+    getAuthorQuote();
+  },[])
 
     return (
       <div id="main" style={{backgroundColor:`${background}`}}>
